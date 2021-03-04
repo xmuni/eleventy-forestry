@@ -37,5 +37,6 @@ fields:
     maxSize: 64
   label: image
 pages:
+- product/5in-38cal-mount.md
 - product/aircraft_carrier.md
 - product/potato.md
