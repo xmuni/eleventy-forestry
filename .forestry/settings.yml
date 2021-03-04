@@ -4,11 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: src/home-content/1.md
-  label: Home-1
 - type: directory
-  path: src/homesections
+  path: src/home-content
   label: Homepage
   create: all
   match: "**/*"
