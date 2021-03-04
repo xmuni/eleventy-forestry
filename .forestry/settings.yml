@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/home-content/1.md
   label: Home-1
-  match: "**/*"
 - type: directory
   path: src/homesections
   label: Homepage
