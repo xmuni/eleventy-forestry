@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: src/homesections
-  label: Homepage
+  label: Home-Sections
   create: all
   match: "**/*"
   templates:
