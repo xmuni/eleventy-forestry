@@ -1,4 +1,21 @@
 ---
 label: Sezione 1
 hide_body: true
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: link-list
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: link-list
