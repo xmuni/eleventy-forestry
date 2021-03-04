@@ -32,4 +32,5 @@ fields:
     required: false
   label: slug
 pages:
+- product/aircraft_carrier.md
 - product/potato.md
