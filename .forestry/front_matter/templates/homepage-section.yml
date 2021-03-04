@@ -16,3 +16,5 @@ fields:
     schema:
       format: markdown
   label: text
+pages:
+- src/home-content/1-potato.md
