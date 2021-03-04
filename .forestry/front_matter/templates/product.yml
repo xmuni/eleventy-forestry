@@ -32,4 +32,5 @@ fields:
     maxSize: 64
   label: image
 pages:
+- src/product/gato.md
 - src/product/twin-bofors.md
