@@ -31,3 +31,5 @@ fields:
   config:
     required: false
   label: slug
+pages:
+- product/potato.md
