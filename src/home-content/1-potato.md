@@ -1,7 +1,7 @@
 ---
 image: "/images/potatoes.jpg"
 text: |-
-  #Section title
+  # Section title
 
   * bullet one
   * bullet two
