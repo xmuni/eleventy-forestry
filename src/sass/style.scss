@@ -20,6 +20,11 @@ a {
 nav {
     // background: rgba($color: #000000, $alpha: 0.1);
     padding: 1rem;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
         margin: .5rem;
