@@ -1,12 +1,15 @@
 body {
-    background: #eee;
+    background: rgb(239, 240, 241);
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
 }
-
 
 
 a {
@@ -16,6 +19,7 @@ a {
 
 nav {
     // background: rgba($color: #000000, $alpha: 0.1);
+    padding: 1rem;
 
     a {
         margin: .5rem;
@@ -24,5 +28,81 @@ nav {
 }
 
 main {
-    background: rgba($color: #000000, $alpha: 0.1);
+    // background: rgba($color: #000000, $alpha: 0.1);
+    background: white;
+    box-shadow: 0 0 1rem 1rem rgba($color: black, $alpha: .03);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+
+    &.home {
+        padding: 0;
+    }
+
+    &.home article {
+        // padding: .5rem 1rem;
+
+        .display-row {
+            padding: 3vw;
+            display: grid;
+            grid-template-columns: 1fr 0 1fr;
+            // gap: 2vw;
+            // display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 100/;
+            // height: 100%;
+        }
+
+        section.display-column {
+            // padding: .5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: auto;
+            width: 100%;
+
+            img {
+                max-width: 400px;
+                height: auto;
+            }
+        }
+        
+    }
+
+    &.home article:nth-child(odd) .display-row {
+        background: rgba($color: black, $alpha: .03);
+    }
+    &.home article:nth-child(even) .display-row {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background: rgba($color: black, $alpha: .05);
+    width: 100%;
+    margin-top: auto;
+    min-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Youtube */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+  
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

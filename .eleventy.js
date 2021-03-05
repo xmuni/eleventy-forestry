@@ -1,20 +1,29 @@
-module.exports = (config) => {
-  // config.addPassthroughCopy({'src/_includes/assets/css/main.min.css': 'css/main.min.css'});
-  config.addPassthroughCopy({ "src/images": "images" });
+module.exports = (eleventyConfig) => {
+    // config.addPassthroughCopy({'src/_includes/assets/css/main.min.css': 'css/main.min.css'});
+    eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
-  config.addWatchTarget("./src/sass/");
+    eleventyConfig.addWatchTarget("./src/sass/");
 
-  // posts collection
-    // eleventyConfig.addCollection("posts", function(collection) {
-    // return collection.getFilteredByGlob("./src/blog/*.md").reverse();
-  // });
+    const outdent = require("outdent")({ newline: " " });
 
-  // Base config
-  return {
-    passthroughFileCopy: true,
-    dir: {
-        input: "src",
-        output: "_site",
-    }
-};
+    eleventyConfig.addShortcode('youtube', require('./src/shortcodes/youtube'));
+
+    // Remove indentation from templates in order to avoid markdown adding <code><pre> garbage
+    // eleventyConfig.addShortcode("alsoGoodShortcode", function() {
+    //     return outdent`This will not be a code block in a markdown file.`;
+    // });
+
+    // posts collection
+        // eleventyConfig.addCollection("posts", function(collection) {
+        // return collection.getFilteredByGlob("./src/blog/*.md").reverse();
+    // });
+
+    // Base config
+    return {
+        passthroughFileCopy: true,
+        dir: {
+            input: "src",
+            output: "_site",
+        }
+    };
 };
