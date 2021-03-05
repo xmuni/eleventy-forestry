@@ -3,7 +3,7 @@ image: "/images/gato.jpg"
 text: |2-
 
 
-  # Gato submarine
+  # [Gato submarine](https://en.wikipedia.org/wiki/Gato-class_submarine)
 
   * Pros
 

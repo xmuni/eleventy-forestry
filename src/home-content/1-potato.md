@@ -1,5 +1,4 @@
 ---
-title: Potato
 image: "/images/potatoes.jpg"
 text: |2-
 
