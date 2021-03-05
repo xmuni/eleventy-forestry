@@ -1,7 +1,7 @@
 ---
 title: Potato
 image: "/images/potatoes.jpg"
-text: |-
+text: |2-
 
 
   # Section title
@@ -9,7 +9,7 @@ text: |-
   * bullet one
   * bullet two
   * bullet three
-  
+
   [Some random link](www.mmoblfoto.it)
 
 ---
