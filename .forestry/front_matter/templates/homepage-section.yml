@@ -17,5 +17,5 @@ fields:
       format: markdown
   label: text
 pages:
-- src/home-content/1-potato-b.md
+- src/home-content/1-potato.md
 - src/home-content/3-gato.md
