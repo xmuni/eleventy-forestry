@@ -27,6 +27,10 @@ nav {
     }
 }
 
+ul {
+    padding-left: 0;
+}
+
 main {
     // background: rgba($color: #000000, $alpha: 0.1);
     background: white;
@@ -84,13 +88,18 @@ img {
 }
 
 footer {
-    background: rgba($color: black, $alpha: .05);
-    width: 100%;
     margin-top: auto;
-    min-height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    padding-top: 5vh;
+
+    .footer-content {
+        background: rgba($color: black, $alpha: .05);
+        width: 100%;
+        min-height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Youtube */
