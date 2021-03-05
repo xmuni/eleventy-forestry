@@ -6,6 +6,16 @@ module.exports = (eleventyConfig) => {
 
     const outdent = require("outdent")({ newline: " " });
 
+    const markdownIt = require('markdown-it')
+    const markdownItAttrs = require('markdown-it-attrs')
+    const markdownItOptions = {
+        html: true,
+        breaks: true,
+        linkify: true
+    }
+    const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+    eleventyConfig.setLibrary('md', markdownLib)
+      
     eleventyConfig.addShortcode('youtube', require('./src/shortcodes/youtube'));
 
     // Remove indentation from templates in order to avoid markdown adding <code><pre> garbage

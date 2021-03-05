@@ -5,7 +5,7 @@ text: |-
 
   # Tomatoes are awesome
 
-  * tomato one
+  * tomato one {.pdf}
   * tomato two
   * tomato three
 
